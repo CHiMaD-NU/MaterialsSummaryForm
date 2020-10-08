@@ -17,9 +17,9 @@ function resizer(){
 	var fac = 0.5;
 
 	while ((Math.abs(diff) > lim || diff < 0) & nTrial < nLim){
-		var mult = fac*(1. - nTrial/nLim);
+		var mult = fac*(1. + nTrial/nLim);
 		if (diff > 0){
-			mult += 1.;
+			mult =  2. - mult;
 		}
 		para.style.fontSize = fs*mult + 'px';
 		fs = parseFloat(window.getComputedStyle(para, null).getPropertyValue('font-size'));

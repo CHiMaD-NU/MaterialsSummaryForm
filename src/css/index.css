@@ -27,12 +27,17 @@ html,body {
 }
 
 
-.column{
+.columnLeft{
 	position: relative;
 	float: left;
-	width:50%;
+	width:45%;
 }
 
+.columnRight{
+	position: relative;
+	float: left;
+	width:55%;
+}
 .iForm{
 	margin:1vw;
 }
