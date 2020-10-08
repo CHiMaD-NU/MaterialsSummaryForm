@@ -14,8 +14,6 @@ function resizer(){
 	var height = window.innerHeight - rect.top;
 	var diff = height - rect.height;
 	var nTrial = 0;
-	console.log(fs)
-	console.log(nTrial, height, rect.height, diff, lim, fs)
 	var fac = 0.5;
 
 	while ((Math.abs(diff) > lim || diff < 0) & nTrial < nLim){
@@ -29,7 +27,6 @@ function resizer(){
 		diff = height - rect.height;
 
 		nTrial += 1
-		console.log(nTrial, rect.height, diff, fs, mult)
 	}
 	document.getElementById('form').height = rect.height;
 }
